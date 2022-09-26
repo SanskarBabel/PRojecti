@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VTOP LEAVE REQUEST</title>
+    <link rel="stylesheet" href="VTOP.CSS">
+</head>
+<body>
+    <form action="">
+        <div class="image" id="image">
+            <img src="IMG/image.png" height="100" width="250">
+        </div>
+        <h1>LEAVE REQUEST</h1>
+        <h4>Total Number Of Request: <input type="text" name="Total Number Of Request" required></h4>
+        <h4>Total Number Of Request Pending: <input type="text" name="Total Number Of Request Pending" required></h4>
+        <button type="button" class="button1">First Page</button> 
+        <button type="button" class="button2">Previous</button> 
+        <button type="button" class="button3">Next</button> 
+        <button type="button" class="button4">Last Page</button>
+
+
+        <p>Required fields are followed by *</p>
+        <p>Name: * <input type="text" name="name" required></p>
+        <p>Registration Number: * <input type="text" name="Registration Number" required></p>
+        <p>Hostel Block: *<select name="Hostel_Block" id="Hostel_Block" required>
+                <option value="">--Select Hostel Block--</option>
+                <option value="Girls Hostel">Girls Hostel</option>
+                <option value="Boys Hostel Block-1">Boys Hostel Block-1</option>
+                <option value="Boys Hostel Block-2">Boys Hostel Block-2</option>
+                <option value="Boys Hostel Block-3">Boys Hostel Block-3</option>
+            </select></p>
+        <p>Room Number: * <input type="number" name="Room Number" required></p>
+        <p>Email (VIT BHOPAL Email ID Only): * <input type="email" name="email" id="email" required></p>
+        <!-- this is for email input type-->
+        <p>Phone Number: * <input type="number" name="Phone Number" required></p>
+        <p>
+        <fieldset>
+            <!--to compile male and female in one-->
+            <legend>Gender *</legend> <!-- to give this a part a heading or an identity-->
+            Male <input type="radio" name="gender" id="male" required>
+            Female <input type="radio" name="gender" id="female" required>
+            <!--name = gender is same because hai to ek hi cheez na select to ek hi krna hai apn ko-->
+            </p>
+        </fieldset>
+        <p>Parent/Guardian Name: * <input type="text" name="Parent/Guardian Name" required></p>
+        <p>Parent/Guardian Phone Number: * <input type="number" name="Parent/Guardian Phone Number" required></p>
+        <P>Permanent Address: <textarea name="address" id="address" cols="100" rows="8"></textarea></P>
+        <p>Pincode: <input type="number" name="pincode" id="pincode"></p>
+        <h2>Reason For Leave</h2>
+        <p>Reason For Leave: *
+            <select name="card_type" id="card_type" required>
+                <option value="">--Select a Reason--</option>
+                <option value="Hometown">Hometown</option>
+                <option value="Special Outing">Special Outing</option>
+                <option value="With Parent">With Parent</option>
+                <option value="Official Leave (Gate/Campus leave)">Official Leave (Gate/Campus leave)</option>
+                <option value="Summer Vacation">Summer Vacation</option>
+                <option value="Winter Vacation">Winter Vacation</option>
+                <option value="Emergency Leave">Emergency Leave</option>
+                <option value="Local Guardian">Local Guardian</option>
+                <option value="Outing">Outing</option>
+                <option value="Other">Other</option>
+            </select>
+        </p>
+        <p>
+            Other Reason For Outing: * <textarea type="text" name="text" id="text" cols="100" rows="8"></textarea>
+        </p>
+
+        <p>Visiting Place: * <textarea type="text" name="Visiting Place"></textarea></p>
+        <h2>Duration Of Leave</h2>
+        <p>From: * <input type="date"></p>
+        <p>To: * <input type="date"></p>
+        <p>Leaving Time: * <input type="time"></p>
+        <p>Arrival Time: * <input type="time"></p>    
+        <input type="submit" value="Submit"> <input type="reset" value="Reset">
+    
+</body>
+</html>

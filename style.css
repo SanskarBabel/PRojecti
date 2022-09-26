@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+  
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position:relative;
+    height: 92px ;
+    /* background-color: rgb(43, 41, 41); */
+    background-color: #20608a; 
+    background-image: linear-gradient(45deg,#32728f,#8a5844);
+    
+
+}
+
+/* .logo{
+    margin: 10px 45px;
+} */
+.logo img{
+    
+    height: 93px;
+    /* margin: 3px 6px; */
+    width: 173px;
+    position: relative;
+    left: 70px;
+}
+
+ .name {
+    text-align: right;
+    position:absolute;
+    right: 80px;
+    top: 18px;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: white;
+}
+.left{
+    /* justify-content: left; */
+    position: relative;
+    left: 55px;
+    
+}
+
+.right{
+     
+    position: absolute;
+}
+.item{
+    background-color: rgb(253, 251, 251);
+    border: 1px solid rgb(24, 22, 22);
+    
+    border-radius: 5px;
+    margin: 10px;
+    padding: 4px;
+    width: 350px;
+    height: 150px;
+    left: 20px;
+}
+#item-1{
+    order: 2;
+    /* flex-grow: 2; */
+    /* flex-shrink: 3; */
+    flex-basis: 320px;
+    border-top: 3px solid blue;
+}
+#item-2{
+    /* order: 1; */
+    flex-basis: 320px;
+    border-top: 3px solid rgb(4, 218, 4);
+}
+
+#item-4{
+    font-weight: bold;
+}
+.item .content{
+    font-weight: bold;
+}
+.right{
+    background-color: rgba(255, 252, 252, 0.986);
+    border: 1px solid;
+    border-top: 3px solid orangered;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 4px;
+    width: 750px;
+    height: 50px;
+    left: 450px;
+    top: 90px;
+    
+    /* display: flex; */
+}
+.right .container{
+    text-align: center;
+    position: relative;
+    left: 0px;
+}
+
+#item-2 button{
+    background-color: rgb(48, 134, 190);
+}
+
+.item button{
+    /* text-align: left; */
+    position: relative;
+    top: 29px;
+    left:238px ;
+    border: 2px solid;
+    border-radius: 5px;
+    height: 35px;
+    width: 115px;
+    background-color: rgb(73, 194, 73);
+    color: #fff;
+    transition: all 0s ease-in-out 0s;
+}
+button:hover{
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+
+}
+#item-2 button:hover{
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+}
+
+.left .item .content{
+    padding: 5px;
+    margin: 2px;
+    font-size: medium;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.left .item h4{
+    padding: 4px;
+    margin: 10px;
+    /* justify-content: left; */
+    right: 8px;
+    position: relative;
+    color: rgb(39, 101, 151);
+}
